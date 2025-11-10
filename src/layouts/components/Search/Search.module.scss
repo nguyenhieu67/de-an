@@ -1,15 +1,21 @@
 .search {
     --search-border-radius: 99px;
     --search-button-width: 52px;
+    --search-height-space: 10px;
 
     position: relative;
     display: flex;
-    width: 360px;
+    width: 300px;
     height: 50px;
     padding-left: 16px;
-    background-color: rgba(22, 24, 35, 0.06);
+    margin-left: 150px;
+    background-color: rgba($color: #fceeee, $alpha: 0.8);
     border-radius: var(--search-border-radius);
     border: 1.5px solid transparent;
+
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+    }
 
     input {
         flex: 1;
@@ -22,13 +28,17 @@
         font-family: var(--font-family);
     }
 
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: rgba(22, 24, 35, 0.75);
+    }
+
     &::after {
         content: "";
         position: absolute;
-        top: 9px;
+        top: var(--search-height-space);
         right: var(--search-button-width);
         width: 1px;
-        height: calc(50px - (9px * 2));
+        height: calc(50px - (var(--search-height-space) * 2));
         background-color: rgba(22, 24, 35, 0.12);
     }
 

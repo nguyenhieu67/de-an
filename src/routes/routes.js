@@ -3,6 +3,7 @@ import Home from "~/pages/Home";
 import About from "~/pages/About";
 import Blog from "~/pages/Blog";
 import Contact from "~/pages/Contact";
+import Location from "~/pages/Location";
 
 const publicRoutes = [
     {
@@ -13,6 +14,10 @@ const publicRoutes = [
     {
         path: config.routes.about,
         component: About,
+    },
+    {
+        path: config.routes.location,
+        component: Location,
     },
 
     {
