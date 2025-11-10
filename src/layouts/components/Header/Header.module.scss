@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    gap: 100px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-title {
+    margin-left: 6px;
+    font-weight: 600;
+}
