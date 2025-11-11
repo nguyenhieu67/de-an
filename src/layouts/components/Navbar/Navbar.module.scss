@@ -1,6 +1,4 @@
 .navbar {
-    margin-left: auto;
-
     &-list {
         display: flex;
         height: 100%;
@@ -12,7 +10,7 @@
 
     &-link {
         display: block;
-        padding: 16px;
+        padding: 12px 16px;
         height: inherit;
 
         font-size: 1.6rem;
